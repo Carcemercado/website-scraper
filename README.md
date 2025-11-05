@@ -14,6 +14,7 @@ A modern web scraping tool built with React, Mantine UI, and Puppeteer. This app
 ## Tech Stack
 
 ### Frontend
+
 - **React 19** - Modern React with hooks
 - **Mantine UI v8** - Component library for UI elements
 - **TypeScript** - Type-safe development
@@ -21,6 +22,7 @@ A modern web scraping tool built with React, Mantine UI, and Puppeteer. This app
 - **Tabler Icons** - Beautiful icon set
 
 ### Backend
+
 - **Express** - Node.js web framework
 - **Puppeteer** - Headless browser automation
 - **Cheerio** - HTML parsing and manipulation
@@ -29,18 +31,21 @@ A modern web scraping tool built with React, Mantine UI, and Puppeteer. This app
 ## Getting Started
 
 ### Prerequisites
+
 - Node.js (v16 or higher)
 - npm or yarn
 
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/Carcemercado/website-scraper.git
 cd website-scraper
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 ```
@@ -48,10 +53,13 @@ npm install
 ### Running the Application
 
 1. Start the backend server:
+
 ```bash
 npx ts-node server/index.ts
 ```
+
 Or compile and run:
+
 ```bash
 cd server
 npx tsc index.ts
@@ -59,6 +67,7 @@ node index.js
 ```
 
 2. In a separate terminal, start the frontend:
+
 ```bash
 npm run dev
 ```
@@ -80,9 +89,11 @@ npm run dev
 ## API Endpoints
 
 ### POST `/api/scrape`
+
 Scrapes a given URL and returns structured data.
 
 **Request Body:**
+
 ```json
 {
   "url": "https://example.com"
@@ -90,6 +101,7 @@ Scrapes a given URL and returns structured data.
 ```
 
 **Response:**
+
 ```json
 {
   "url": "https://example.com",
@@ -135,6 +147,7 @@ The Express server runs on port 3000 and handles scraping requests using Puppete
 ## Important Notes
 
 ⚠️ **Ethical Scraping**
+
 - Only scrape websites that allow scraping
 - Check robots.txt and terms of service
 - Respect rate limits and don't overload servers
